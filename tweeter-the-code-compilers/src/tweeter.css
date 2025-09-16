@@ -1,0 +1,124 @@
+/*
+    Class: SWE2511 - Tweeter
+    Name: Matthew Schulz & Kaiden Pollesch
+    Class Section: 111
+*/
+
+body {
+    background-color: lightgray;
+    margin: 20px;
+}
+
+#errormessage {
+    color: red;
+}
+
+th.skinny {
+    width: 0.1%;
+    white-space: nowrap;
+}
+
+.thick {
+    width: 25%;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #9f9e9e;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-family: "Times New Roman", sans-serif;
+}
+
+#submitButton {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: dodgerblue;
+}
+
+#tableHead {
+    background-color: black;
+    color: white;
+}
+
+label {
+    font-family: "Times New Roman", sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+th, td {
+    border-left: solid dimgray 1px;
+    border-right: solid dimgray 1px;
+    padding: 2px;
+}
+
+#inputField {
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+}
+
+#submitButton:active {
+    color: dodgerblue;
+    background-color: white;
+}
+
+h1 {
+    font-family: "Old English Text MT", sans-serif;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.emph {
+    font-size: 90px;
+}
+
+.likeButtons {
+    border: solid gold;
+    border-radius: 3px;
+    width: 45px;
+    background-color: gold;
+    margin: 0;
+    font-size: 14px;
+}
+
+.disButtons {
+    border: solid darkred;
+    border-radius: 3px;
+    width: 60px;
+    background-color: darkred;
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    border-top: none;
+    border-bottom: none;
+}
+
+#errormessage {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Times New Roman", sans-serif;
+    background-color: red;
+    opacity: 80%;
+    margin-top: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+
+}

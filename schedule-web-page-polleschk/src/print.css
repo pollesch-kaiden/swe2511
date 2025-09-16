@@ -1,0 +1,96 @@
+/*
+Course: SWE2511 111
+Fall 2024
+Project 1 - Schedule Web Page
+Name: Kaiden Pollesch
+Created: 9/17/24
+ */
+
+
+img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+h1, p {
+    color: black;
+}
+
+body {
+    background-color: white;
+    font-family: "Berlin Sans FB", sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.schedule {
+    display: grid;
+    width: 75%;
+    grid-template-columns: 10% repeat(5, 18%);
+    background-color: white;
+    margin: auto;
+    border-radius: 1px;
+    border: 1px solid black;
+}
+
+.header {
+    font-weight: bold;
+    font-family: "Berlin Sans FB Demi", sans-serif;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.time-period {
+    border: 2px solid black;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.time {
+    font-weight: bold;
+    color: black;
+}
+
+.activities {
+    border-radius: 30%;
+    background-image: linear-gradient(to bottom right, #4c4c4c, #e2e2e2, #e2e2e2, #4f4f4f);
+    color: black;
+}
+
+.school {
+    border-radius: 5px;
+}
+
+.SWE2511 {
+    background-color: rgb(150,150,150);
+}
+
+.SWE2710 {
+    background-color: #5a5a5a;
+}
+
+.COM2001 {
+    background-color: #696969;
+}
+
+.MTH2310 {
+    background-color: #444444;
+}
+
+.HON2052{
+    background-color: #adadad;
+}
+
+.BUS2411 {
+    background-color: #1d1d1d;
+}
+
+.merged {
+    grid-row: span 2;
+    height: 115px;
+}

@@ -1,0 +1,98 @@
+/*
+ * Class: SWE2511 - Coin Flipper DOM
+ * Name: Kaiden Pollesch
+ * Class Section: 111
+*/
+
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.coin-flipper-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
+    align-content: center;
+}
+
+label {
+    display: inline-block;
+    width: 175px;
+    margin: 10px 0 5px 0;
+}
+
+input[type="text"] {
+    width: 60px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: slategray;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 260px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.error-message {
+    color: red;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#histogram {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+}
+
+.histogram-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.histogram-label {
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+    font-weight: bold;
+    border-bottom: black solid 1px;
+    border-radius: 10px;
+}
+
+.histogram-progress {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.histogram-count {
+    border-bottom: black solid 1px;
+    border-radius: 10px;
+    width: 60px;
+    margin: 2px;
+    text-align: center;
+}
+
+
+#time {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}

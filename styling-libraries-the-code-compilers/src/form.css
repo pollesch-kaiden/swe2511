@@ -1,0 +1,14 @@
+/*
+Class: SWE2511 - Bootstrap Forms
+Names: Kaiden Pollesch & Matthew Schulz
+Class Section: 111
+*/
+
+.card {
+    background-color: white;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 20px auto;
+    width: 75%;
+    box-shadow: 2px 2px 4px #000;
+}

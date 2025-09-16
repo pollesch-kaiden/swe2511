@@ -1,0 +1,18 @@
+/*
+ * Class: SWE2511 - Layout Managers
+ * Flow Layout Exercise 1
+ * Name(s): Kaiden Pollesch
+ * Class Section: 111
+ */
+
+p {
+    font-size: max(1em, 3vw);
+}
+
+img {
+    width: min(30vw, 200px);
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

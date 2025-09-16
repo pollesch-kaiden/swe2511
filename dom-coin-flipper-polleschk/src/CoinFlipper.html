@@ -1,0 +1,32 @@
+<!--
+	Class: SWE2511 - Coin Flipper DOM
+	Name: Kaiden Pollesch
+	Class Section: 111
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="CoinFlipper.css">
+	<script src="CoinFlipper.js"></script>
+	<title>Kaiden Pollesch's Coin Flipper</title>
+</head>
+<body>
+	<div class="coin-flipper-container">
+		<h1>Kaiden Pollesch's Coin Flipper</h1> <br>
+
+		<label for="numCoins">Number of Coins to Flip:</label>
+		<input type="text" id="numCoins" name="numCoins">
+		<span id="numCoinsError" class="error-message"></span><br>
+
+		<label for="numFlips">Number of Coin Flips: </label>
+		<input type="text" id="numFlips" name="numFlips">
+		<span id="numFlipsError" class="error-message"></span><br>
+
+		<button>Go</button>
+
+		<div id="histogram"></div>
+		<span id="time"></span>
+	</div>
+</body>
+</html>

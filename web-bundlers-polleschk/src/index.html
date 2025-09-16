@@ -1,0 +1,110 @@
+<!--
+    Class: SWE2511 - Calculator
+    Name: Kaiden Pollesch
+    Class Section: 111
+	Calculator HTML structure
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <!-- Include the latest version of Bootstrap -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Include additional styling -->
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1 class="text-center mb-4">Calculator</h1>
+    <div class="container">
+        <!-- Arithmetic Section -->
+        <div class="row justify-content-center">
+            <div class="col-7">
+                <h2>Arithmetic</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center op_row">
+            <div class="col-2">
+                <label for="input_a">Enter a number:</label><input id="input_a" type="number" class="form-control" placeholder="A">
+                <div id="numA_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals">
+                <select id="operation_select" class="form-select">
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                    <option value="multiply">*</option>
+                    <option value="divide">/</option>
+                </select>
+            </div>
+            <div class="col-2">
+                <label for="input_b">Enter a number:</label><input id="input_b" type="number" class="form-control" placeholder="B">
+                <div id="numB_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-2 op_equals"><h3><span class="me-2">=</span><span id="result"></span></h3></div>
+        </div>
+        <!-- Quadratic Formula Section -->
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <h2>Quadratic Formula<span id="quad_result"></span></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center op_row">
+            <div class="col-2">
+                <label for="quad_a">Enter a number:</label><input id="quad_a" type="number" class="form-control" placeholder="A">
+                <div id="quadA_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals"><h3>x<sup>2</sup> +</h3></div>
+            <div class="col-2">
+                <label for="quad_b">Enter a number:</label><input id="quad_b" type="number" class="form-control" placeholder="B">
+                <div id="quadB_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals"><h3>x +</h3></div>
+            <div class="col-2">
+                <label for="quad_c">Enter a number:</label><input id="quad_c" type="number" class="form-control" placeholder="C">
+                <div id="quadC_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-3 op_equals"><h3><span class="me-2">=</span><span id="quad_result_display"></span></h3></div>
+        </div>
+        <!-- Greatest Common Divisor Section -->
+        <div class="row justify-content-center">
+            <div class="col-7">
+                <h2>Greatest Common Divisor <span id="gcd_result"></span></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center op_row">
+            <div class="col-2">
+                <label for="gcd_a">Enter a number:</label><input id="gcd_a" type="number" class="form-control" placeholder="A">
+                <div id="gcdA_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-1 op_equals"><h3>and</h3></div>
+            <div class="col-2">
+                <label for="gcd_b">Enter a number:</label><input id="gcd_b" type="number" class="form-control" placeholder="B">
+                <div id="gcdB_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-2 op_equals"><h3><span class="me-2">=</span><span id="gcd_result_display"></span></h3></div>
+        </div>
+        <!-- Factorial Section -->
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h2>Factorial <span id="factorial_result"></span></h2>
+            </div>
+        </div>
+        <div class="row justify-content-center op_row">
+            <div class="col-2">
+                <label for="factorial_input">Enter a number:</label><input id="factorial_input" type="number" class="form-control" placeholder="N">
+                <div id="factorial_error" class="invalid-feedback"></div>
+            </div>
+            <div class="col-2 op_equals"><h3><span class="me-2">=</span><span id="factorial_result_display"></span></h3></div>
+        </div>
+    </div>
+    <!-- Include javascript for the application -->
+    <script src="utilities.js" type="module"></script>
+    <script src="math_functions.js" type="module"></script>
+    <script src="calculator.js" type="module"></script>
+    <!-- Include the Bootstrap JS from node_modules -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
+</body>
+</html>

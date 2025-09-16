@@ -1,0 +1,101 @@
+/*
+Course: SWE2511 111
+Fall 2024
+Project 1 - Schedule Web Page
+Name: Kaiden Pollesch
+Created: 9/17/24
+ */
+
+
+img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #1e1f22;
+    font-family: Broadway, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    font-family: Broadway, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.schedule {
+    display: grid;
+    width: 75%;
+    grid-template-columns: 10% repeat(5, 18%);
+    background-color: black;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px solid maroon;
+}
+
+
+.time-period {
+    border: 1px solid #e0e0e0;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time {
+    font-weight: bold;
+}
+
+
+
+.activities {
+    border-radius: 30%;
+    background-image: linear-gradient(to bottom right, red, yellow, yellow, brown);
+    color: black;
+}
+
+.school {
+    border-radius: 5px;
+}
+
+.SWE2511 {
+    background-color: green;
+    color: darkblue;
+}
+
+.SWE2710 {
+    background-color: teal;
+    color: darkgoldenrod;
+}
+
+.COM2001 {
+    background-color: deeppink;
+    color: darkolivegreen;
+}
+
+.MTH2310 {
+    background-color: darkviolet;
+    color: lightcoral;
+}
+
+.HON2052{
+    background-color: orange;
+    color: darkslategray;
+}
+
+.BUS2411 {
+    background-color: blue;
+    color: lightgoldenrodyellow;
+}
+
+.merged {
+    grid-row: span 2;
+    height: 110px;
+}

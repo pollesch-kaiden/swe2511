@@ -1,0 +1,47 @@
+<!--
+	Class: SWE2511 - Drawing
+	Names: Mathew Schulz & Kaiden Pollesch
+	Class Section: 111
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing Application</title>
+
+    <!-- Import CSS and JavaScript !-->
+    <link rel="stylesheet" href="drawing.css" />
+    <script src="drawing.js"></script>
+</head>
+<body>
+    <canvas id="my_canvas" height="800" width="800"></canvas>
+    <br>
+    <label for="colorPicker">Choose a pen color:</label>
+    <input type="color" id="colorPicker" value="#000000">
+    <br>
+    <label for="backgroundColorPicker">Choose a background color:</label>
+    <input type="color" id="backgroundColorPicker" value="#FFFFFF">
+    <div class="container">
+        <input type="radio" id="small" name="penMode" value="small" checked>
+        <label for="small">Small Pencil</label><br>
+        <input type="radio" id="medium" name="penMode" value="medium">
+        <label for="medium">Medium Pencil</label>
+        <input type="radio" id="large" name="penMode" value="large">
+        <label for="large">Large Pencil</label>
+    </div>
+    <div class="container">
+        <input type="radio" id="lineSmall" name="penMode" value="lineSmall">
+        <label for="lineSmall">Small Pen</label>
+        <input type="radio" id="lineMedium" name="penMode" value="lineMedium">
+        <label for="lineMedium">Medium Pen</label>
+        <input type="radio" id="lineLarge" name="penMode" value="lineLarge">
+        <label for="lineLarge">Large Pen</label>
+    </div>
+    <div class="container">
+        <input type="radio" id="eraser" name="penMode" value="eraser">
+        <label for="eraser">Eraser</label><br>
+    </div>
+    <button id="clearButton">Clear Canvas</button>
+</body>
+</html>

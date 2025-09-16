@@ -1,0 +1,56 @@
+/*
+Course: SWE2511 111
+Fall 2024
+Lab 2 - HTML and CSS
+Names: Kaiden Pollesch & Matthew Schulz
+Created: 9/12/24
+ */
+
+body {
+    background-color: pink;
+}
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+p {
+    border: 1px solid black;
+}
+
+p:hover {
+    border: 10px dotted blue;
+}
+
+h3 {
+    color: cyan;
+    font-family: "Comic Sans MS", serif;
+}
+
+li{
+    margin: 10px;
+    padding: 5px;
+}
+
+#olItemOne {
+    background-color: red;
+    width: 50%
+}
+
+#olItemTwo {
+    background-color: orange;
+    width: 50%
+}
+
+#olItemThree {
+    background-color: yellow;
+    width: 50%
+}
+
+#olItemFour {
+    background-color: green;
+    width: 50%
+}

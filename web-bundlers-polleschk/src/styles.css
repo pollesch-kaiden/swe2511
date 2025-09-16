@@ -1,0 +1,14 @@
+/*
+ * Class: SWE2511 - Calculator
+ * Name: Kaiden Pollesch
+ * Class Section: 111
+ * Calculator custom styles
+ */
+
+.op_row {
+    height: 8em;
+}
+
+.op_equals {
+    padding-top: 1.5em;
+}

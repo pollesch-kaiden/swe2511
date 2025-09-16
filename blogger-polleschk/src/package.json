@@ -1,0 +1,14 @@
+{
+  "name": "blogger",
+  "description": "Blogger Application",
+  "main": "blogserver.mjs",
+  "type": "module",
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3"
+  }
+}

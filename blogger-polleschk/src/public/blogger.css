@@ -1,0 +1,35 @@
+/*
+ * Class: SWE2511 - Blogger
+ * Name: Kaiden Pollesch
+ * Section: 111
+ *
+ * Blogger CSS style definitions
+ */
+
+title {
+    font-size: 8em;
+    color: #333;
+    margin: 10px;
+    padding: 2px;
+}
+
+h1 {
+    font-size: 4em;
+    color: #333;
+    margin: 10px;
+    padding: 2px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 10px;
+    padding: 2px;
+}
+
+label {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px;
+    padding: 2px;
+}

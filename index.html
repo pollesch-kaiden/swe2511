@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWE 2511 - Web Applications Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .tech-tags {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background: #f0f0f0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>SWE 2511 Portfolio</h1>
+            <p>Web Applications - Milwaukee School of Engineering</p>
+        </header>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">Bird Visualizer</h3>
+                <p class="project-description">Interactive bird data visualization application</p>
+                <a href="./bird-visualizer-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Blogger Platform</h3>
+                <p class="project-description">Web-based blogging platform with user interface</p>
+                <a href="./blogger-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Coin Flip Charter</h3>
+                <p class="project-description">Statistical coin flip analysis and charting tool</p>
+                <a href="./coin-flip-charter-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Coin Flipper</h3>
+                <p class="project-description">Interactive coin flipping simulator</p>
+                <a href="./coin-flipper-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">DOM Coin Flipper</h3>
+                <p class="project-description">DOM-manipulated coin flipping application</p>
+                <a href="./dom-coin-flipper-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">DOM</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Drawing App</h3>
+                <p class="project-description">Web-based drawing and sketching application</p>
+                <a href="./drawing-app-the-code-compilers/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Canvas</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Forms and Scope</h3>
+                <p class="project-description">Form handling and JavaScript scope demonstration</p>
+                <a href="./forms-and-scope-the-code-compilers/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Forms</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">HTML & CSS Basics</h3>
+                <p class="project-description">Fundamental HTML and CSS concepts and examples</p>
+                <a href="./html-and-css-the-code-compilers/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">JavaScript Fundamentals</h3>
+                <p class="project-description">Core JavaScript programming concepts and examples</p>
+                <a href="./javascript-the-code-compilers/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Programming</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Layout Designs</h3>
+                <p class="project-description">Various CSS layout techniques and responsive design</p>
+                <a href="./layouts-individual-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Responsive</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">MongoDB Integration</h3>
+                <p class="project-description">Database integration with MongoDB</p>
+                <a href="./mongodb-the-code-compilers/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Database</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Node.js Application</h3>
+                <p class="project-description">Server-side JavaScript with Node.js</p>
+                <a href="./node-js-the-code-compilers/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Server</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">React Filter App</h3>
+                <p class="project-description">React-based filtering and search application</p>
+                <a href="./react-filter-the-code-compilers/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Components</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">React Menu Filter</h3>
+                <p class="project-description">Menu filtering system built with React</p>
+                <a href="./react-menu-filter-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">UI</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Schedule Web Page</h3>
+                <p class="project-description">Interactive schedule and calendar application</p>
+                <a href="./schedule-web-page-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Styling Libraries</h3>
+                <p class="project-description">Demonstration of various CSS frameworks and libraries</p>
+                <a href="./styling-libraries-the-code-compilers/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">Frameworks</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Text File Manager</h3>
+                <p class="project-description">File management and text processing application</p>
+                <a href="./text-file-manager-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">File API</span>
+                    <span class="tech-tag">Text Processing</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Twitter Clone</h3>
+                <p class="project-description">Social media interface inspired by Twitter</p>
+                <a href="./tweeter-the-code-compilers/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Social Media</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Web Bundlers</h3>
+                <p class="project-description">Demonstration of modern web bundling tools</p>
+                <a href="./web-bundlers-polleschk/" class="project-link">View Project</a>
+                <div class="tech-tags">
+                    <span class="tech-tag">Webpack</span>
+                    <span class="tech-tag">Build Tools</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
